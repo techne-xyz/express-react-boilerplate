@@ -1,0 +1,17 @@
+{
+  "extends": ["airbnb-base", "plugin:prettier/recommended"],
+  "rules": {
+    "no-console": "off",
+    "no-unused-vars": "warn",
+    "curly": ["error", "multi-line"],
+    "no-plusplus": "off",
+    "capitalized-comments": [
+      "warn",
+      "always",
+      { "ignoreConsecutiveComments": true }
+    ],
+    "multiline-comment-style": ["warn", "separate-lines"],
+    "no-alert": "off",
+    "class-methods-use-this": "warn"
+  }
+}
