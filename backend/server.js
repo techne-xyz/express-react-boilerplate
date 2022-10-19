@@ -2,7 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const path = require('path');
 
-dotenv.config();
+dotenv.config({ path: path.join(__dirname, '.env.local') });
 const port = process.env.PORT || 5000;
 
 const app = express();

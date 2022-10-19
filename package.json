@@ -7,7 +7,9 @@
     "install-build-all": "npm install && npm run heroku-postbuild",
     "heroku-postbuild": "cd backend && npm install && cd ../frontend && npm install && npm run build",
     "build": "npm run build --prefix frontend",
-    "dev": "concurrently \"npm run start --prefix frontend\" \"npm run dev --prefix backend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run start",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
     "start": "npm start --prefix backend",
     "lint": "npm run lint --prefix frontend && npm run lint --prefix backend"
   },
